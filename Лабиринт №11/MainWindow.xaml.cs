@@ -117,6 +117,7 @@ namespace Лабиринт__11
                 }
             }
         }
+
         Rectangle[,] arr1 = new Rectangle[9, 9];
 
         int[,] arr = new int[9, 9];
@@ -320,71 +321,38 @@ namespace Лабиринт__11
             Ur3.IsEnabled = false;
             Ur4.IsEnabled = false;
         }
+
+        ImageCollection imagesLabirint = new ImageCollection();
+
         bool prBarSet = false;
         int prBarVal = 0;
         public void SetLab()
         {
-            Image ImageContainer = new Image();
             for (int i = 0; i < 9; i++)
                 for (int j = 0; j < 9; j++)
                 {
                     switch (arr[i, j])
                     {
                         case 0:
-                            ImageSource image = new BitmapImage(new Uri(Environment.CurrentDirectory + "/grassForLabirint.jpg", UriKind.Absolute));
-                            ImageContainer.Source = image;
-                            arr1[i, j].Fill = new ImageBrush
-                            {
-                                ImageSource = image
-                            };
+                            arr1[i, j].Fill = imagesLabirint["grass"];
                             break;
                         case 1:
-                            image = new BitmapImage(new Uri(Environment.CurrentDirectory + "/wallForLabirint.jpg", UriKind.Absolute));
-                            ImageContainer.Source = image;
-                            arr1[i, j].Fill = new ImageBrush
-                            {
-                                ImageSource = image
-                            };
+                            arr1[i, j].Fill = imagesLabirint["wall"];
                             break;
                         case 2:
-                            image = new BitmapImage(new Uri(Environment.CurrentDirectory + "/headForLabirint.jpg", UriKind.Absolute));
-                            ImageContainer.Source = image;
-                            arr1[i, j].Fill = new ImageBrush
-                            {
-                                ImageSource = image
-                            };
+                            arr1[i, j].Fill = imagesLabirint["head"];
                             break;
                         case 9:
-                            image = new BitmapImage(new Uri(Environment.CurrentDirectory + "/finishForLabirint.jpg", UriKind.Absolute));
-                            ImageContainer.Source = image;
-                            arr1[i, j].Fill = new ImageBrush
-                            {
-                                ImageSource = image
-                            };
+                            arr1[i, j].Fill = imagesLabirint["finish"];
                             break;
                         case -1:
-                            image = new BitmapImage(new Uri(Environment.CurrentDirectory + "/startForLabirint.jpg", UriKind.Absolute));
-                            ImageContainer.Source = image;
-                            arr1[i, j].Fill = new ImageBrush
-                            {
-                                ImageSource = image
-                            };
+                            arr1[i, j].Fill = imagesLabirint["start"];
                             break;
                         case 8:
-                            image = new BitmapImage(new Uri(Environment.CurrentDirectory + "/box.jpg", UriKind.Absolute));
-                            ImageContainer.Source = image;
-                            arr1[i, j].Fill = new ImageBrush
-                            {
-                                ImageSource = image
-                            };
+                            arr1[i, j].Fill = imagesLabirint["box"];
                             break;
                         case 10:
-                            image = new BitmapImage(new Uri(Environment.CurrentDirectory + "/press.png", UriKind.Absolute));
-                            ImageContainer.Source = image;
-                            arr1[i, j].Fill = new ImageBrush
-                            {
-                                ImageSource = image
-                            };
+                            arr1[i, j].Fill = imagesLabirint["press"];
                             break;
                     }
                 }
