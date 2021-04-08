@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Лабиринт__11"
         mc:Ignorable="d"
-        Title="Лабиринт" Height="450" Width="800" Loaded="Window_Loaded" KeyDown="Window_KeyDown" WindowStartupLocation="CenterScreen" Icon="IconForLabirint.png" Background="#FF979595" ResizeMode="NoResize">
+        Title="Лабиринт" Height="450" Width="800" Loaded="Window_Loaded" KeyDown="Window_KeyDown" WindowStartupLocation="CenterScreen" Background="#FF979595" ResizeMode="NoResize">
     <Grid>
         <Grid.Background>
             <ImageBrush/>
@@ -95,22 +95,22 @@
         <Rectangle x:Name="_77" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28" Margin="386,310,0,0" Stroke="Black" VerticalAlignment="Top" Width="31"/>
         <Button x:Name="Up" Content="" HorizontalAlignment="Left" Margin="616,180,0,0" VerticalAlignment="Top" Width="59" Height="53" Click="Button_Click_3">
             <Button.Background>
-                <ImageBrush ImageSource="up.png"/>
+                <ImageBrush ImageSource="Resources/up.png"/>
             </Button.Background>
         </Button>
         <Button x:Name="Right" Content="" HorizontalAlignment="Left" Margin="680,239,0,0" VerticalAlignment="Top" Width="59" Height="53" Click="Button_Click_1">
             <Button.Background>
-                <ImageBrush ImageSource="right.png"/>
+                <ImageBrush ImageSource="Resources/right.png"/>
             </Button.Background>
         </Button>
         <Button x:Name="Down" Content="" HorizontalAlignment="Left" Margin="616,239,0,0" VerticalAlignment="Top" Width="59" Height="53" Click="Button_Click_2" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
-                <ImageBrush ImageSource="down.png"/>
+                <ImageBrush ImageSource="Resources/down.png"/>
             </Button.Background>
         </Button>
         <Button x:Name="Left" Content="" HorizontalAlignment="Left" Margin="552,239,0,0" VerticalAlignment="Top" Width="58" Height="53" Click="Button_Click">
             <Button.Background>
-                <ImageBrush ImageSource="left.png"/>
+                <ImageBrush ImageSource="Resources/left.png"/>
             </Button.Background>
         </Button>
         <Ellipse x:Name="errorEl" Fill="#FF8BC5C5" HorizontalAlignment="Left" Height="44" Margin="603,352,0,0" Stroke="Black" VerticalAlignment="Top" Width="45"/>
